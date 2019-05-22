@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<style>
+  .image{
+    position: relative;
+    background-image: url(../static/airplane2.jpg);
+    height : 80vh;
+    width : 100%;
+    background-size : cover;
+  }
+  .img-cover{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  @font-face{
+    @font-face { font-family: 'Handon3gyeopsal300g'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Handon3gyeopsal300g.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; }
+  }
+  #ng{
+    font-family: 'Handon3gyeopsal300g';
+  }
+
+</style>
+
+
+<main role="main">
+
+  <link rel = "stylesheet" href="./font.css"/>
+
+  <div class = "image">
+          <div class = "content" style = " 
+          left:150px; 
+          width:450px; 
+          bottom:450px;
+          font-size:3em;
+          font-weight:bold; 
+          position:absolute;
+          text-align: center;
+          color:#ffffff;"
+          >
+            <br>
+            Hack Your Life!
+          </div>
+  </div>
+
+  <br><br>
+  <div class="textbox">
+    <!-- Example row of columns -->
+    <div class="row" >
+      <div class="col-md-4">
+        <h2 id="ng">여행을 기록하세요</h2>
+        <br>
+        <p id="ng">여행지에서 경험한 장소, 음식, 문화 등을 기록하고 그 때의 추억을 남길 수 있습니다</p> 
+      </div>
+      <div class="col-md-4">
+        <h2 id="ng">정보를 공유하세요</h2>
+        <br>
+        <p id="ng">자신의 경험을 다른 사람들과 공유하고 다른 사람들의 기록을 통해 많은 정보를 얻을 수 있습니다</p>  
+      </div>
+      <div class="col-md-4">
+        <h2 id="ng">여행지를 추천받으세요</h2>
+        <br>
+        <p id="ng">원하는 여행 계획을 입력하고 알맞는 여행지를 찾아보세요</p>
+      </div>
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+
+</main>
+
+{% endblock %}

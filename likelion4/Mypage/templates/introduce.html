@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Album example · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+
+<div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm" >
+                <img src = "{% static 'sanghyun.jpg' %}" width=100% height = 100% alt = "나" >
+                <div class="card-body">
+                  <p class="card-text" id = "ng">
+                        <p1>이름 : 이상현</p1>
+                        <br>
+                        <p1>전공 : 컴퓨터공학과</p1>
+                        <br>
+                        <p1>생년월일 : 1998. 06. 24</p1>
+                        <br>
+                        <p1>특징 : 떡볶이랑 연어 좋아함 냠냠 </p1>
+                        <br> 
+                        <p1><strong> 오신김에 저희집 멈머들 보고 가세요~*'-'*</p1> </strong>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm" left = "30px">
+                <svg class="bd-placeholder-img card-img-top"  width="100%" height="400"  focusable="false" role="img" ><image x = "10" y= "10" width = "320" height = "400" xlink:href = "{% static 'hodu.jpg' %}"></image></svg>
+                <div class="card-body">
+                  <p class="card-text" id = "ng"> 
+                        이름 : 호두 
+                        <br>
+                        나이 : 2세
+                        <br>
+                        좋아하는 것 : 산책, 간식
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <svg class="bd-placeholder-img card-img-top"  width="100%" height="400"  focusable="false" role="img" ><image x = "10" y= "10" width = "320" height = "400" xlink:href = "{% static 'jjong2.jpg' %}"></image></svg>                <div class="card-body">
+                        <p class="card-text" id = "ng"> 
+                                이름 : 쫑이
+                                <br>
+                                나이 : 5세
+                                <br>
+                                좋아하는 것 : 언니 다리에서 자기
+                          </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+<div>
+{% endblock %}
